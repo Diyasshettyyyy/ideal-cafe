@@ -1,49 +1,13 @@
-
 import React from 'react';
-import { Container, Nav, Navbar, Carousel, Card, Row, Col, Image } from 'react-bootstrap';
+import { Container, Carousel, Card, Row, Col, Image } from 'react-bootstrap';
 import '../App.css'; // Link to CSS
 
 const Home = () => {
   return (
     <div className="home-bg">
-
-      {/* Navbar */}
-      <Navbar expand="lg" className="shadow-sm py-3 custom-navbar">
-        <Container className="d-flex justify-content-between align-items-center">
-          {/* Left: Logo */}
-          <Navbar.Brand href="#home" className="d-flex align-items-center">
-            <img
-              src="images/logo.png"
-              width="100"
-              height="100"
-              className="d-inline-block align-top me-2"
-              alt="Ice Cream Logo"
-            />
-            <span className="brand-name">Ideal Café</span>
-          </Navbar.Brand>
-
-          {/* Center: Navigation */}
-          <Nav className="mx-auto">
-            <Nav.Link href="#home" className="nav-item">Home</Nav.Link>
-            <Nav.Link href="#about" className="nav-item">About</Nav.Link>
-            <Nav.Link href="#contact" className="nav-item">Contact</Nav.Link>
-            <Nav.Link href="#menu" className="nav-item">Menu</Nav.Link>
-            <Nav.Link href="#login" className="nav-item">Login</Nav.Link>
-          </Nav>
-
-          {/* Right: Profile Picture */}
-          <div>
-            <img
-              src="https://i.pinimg.com/736x/cb/5e/34/cb5e349d3c644515e5ff7bde5513d366.jpg"
-              width="40"
-              height="40"
-              className="d-inline-block align-top rounded-circle"
-              alt="Profile"
-            />
-          </div>
-        </Container>
-      </Navbar>
-
+      <br></br>
+      <br></br>
+      <br></br>
       {/* Carousel */}
       <Container className="my-4">
         <Carousel fade className="large-carousel">
@@ -62,44 +26,42 @@ const Home = () => {
         </Carousel>
       </Container>
 
-      
+      {/* Most Popular Section */}
       <Container className="my-5 text-center">
-  <h2 className="mb-4">Most Popular</h2>
-
-  <Row>
-    {[
-      { title: 'Tasty Tiramisu', image: 'https://i.pinimg.com/736x/fc/ba/01/fcba014b569cb5568dc4b037cc40729c.jpg' },
-      { title: 'Minty fresh chocochip', image: 'https://i.pinimg.com/736x/12/b7/85/12b78519cd42439d523a5588e13b0dcc.jpg' },
-      { title: 'Mixed Berry', image: 'https://i.pinimg.com/736x/5d/b6/7e/5db67e5ce73e62dc6861ac0dcaa31dbe.jpg' },
-      { title: 'icecream sandwich', image: 'https://i.pinimg.com/736x/1d/a7/4d/1da74dbe2d151650b1092d35e700075f.jpg' },
-    ].map((item, idx) => (
-      <Col md={3} key={idx} className="mb-4">
-        <Card className="shadow-sm border-0 text-center">
-          <Card.Body>
-            <Image
-              src={item.image}
-              roundedCircle
-              fluid
-              className="popular-img mb-3"
-              alt={item.title}
-            />
-            <Card.Title>{item.title}</Card.Title>
-            <Card.Text>
-              Delicious {item.title.toLowerCase()} for your sweet cravings!
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </Col>
-    ))}
-  </Row>
-</Container>
-
+        <h2 className="mb-4">Most Popular</h2>
+        <Row>
+          {[
+            { title: 'Tasty Tiramisu', image: 'https://i.pinimg.com/736x/fc/ba/01/fcba014b569cb5568dc4b037cc40729c.jpg' },
+            { title: 'Minty fresh chocochip', image: 'https://i.pinimg.com/736x/12/b7/85/12b78519cd42439d523a5588e13b0dcc.jpg' },
+            { title: 'Mixed Berry', image: 'https://i.pinimg.com/736x/5d/b6/7e/5db67e5ce73e62dc6861ac0dcaa31dbe.jpg' },
+            { title: 'Icecream Sandwich', image: 'https://i.pinimg.com/736x/1d/a7/4d/1da74dbe2d151650b1092d35e700075f.jpg' },
+          ].map((item, idx) => (
+            <Col md={3} key={idx} className="mb-4">
+              <Card className="shadow-sm border-0 text-center">
+                <Card.Body>
+                  <Image
+                    src={item.image}
+                    roundedCircle
+                    fluid
+                    className="popular-img mb-3"
+                    alt={item.title}
+                  />
+                  <Card.Title>{item.title}</Card.Title>
+                  <Card.Text>
+                    Delicious {item.title.toLowerCase()} for your sweet cravings!
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
 
     </div>
   );
 };
 
-// Reusable Section component
+// Optional: Reusable Section Component (still usable elsewhere)
 const Section = ({ title, items }) => (
   <Container className="my-5 text-center">
     <h2 className="mb-4">{title}</h2>
@@ -131,4 +93,5 @@ const generateText = (section, item) => {
 };
 
 export default Home;
+
 

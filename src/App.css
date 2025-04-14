@@ -115,6 +115,152 @@ h2 {
   font-size: 16px; /* Optional: reduce font size a bit */
 }
 
+/* App.css */
 
+/* Navbar base style */
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: pink;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
+/* Link hover effect */
+.nav-hover {
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
 
+.nav-hover:hover {
+  color: #d63384; /* A nice deep pink */
+}
+
+.nav-hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #d63384;
+  transition: width 0.3s ease;
+}
+
+.nav-hover:hover::after {
+  width: 100%;
+}
+
+/* Sign-in button hover */
+.signin-btn {
+  transition: all 0.3s ease;
+}
+
+.signin-btn:hover {
+  background-color: #d63384;
+  color: white;
+  border-color: #d63384;
+  transform: scale(1.05);
+}
+
+/* Search button hover */
+.custom-search-btn {
+  transition: all 0.3s ease;
+}
+
+.custom-search-btn:hover {
+  background-color: #218838; /* darker green */
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks (optional) */
+@media (max-width: 768px) {
+  .search-bar {
+    margin-top: 1rem;
+  }
+
+  .signin-btn {
+    margin-top: 0.5rem;
+  }
+}
+/* Menu Page Styling */
+.menu-page h2, .menu-page h3 {
+  font-weight: bold;
+  color: #d63384;
+}
+
+.menu-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.contact-bg {
+  background-color: #fff0f5; /* Light pink */
+  min-height: 100vh;
+}
+.offers-bg {
+  background-color: #f8f9fa; /* Light gray background */
+  min-height: 100vh;
+}
+
+.card-img-top {
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff4081; /* Pink color */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #e7006d; /* Darker shade of pink */
+}
