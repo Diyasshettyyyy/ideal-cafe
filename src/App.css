@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 } */
-.carousel-caption {
+/* .carousel-caption {
   background: rgba(0, 0, 0, 0.5);
   padding: 15px;
   border-radius: 10px;
@@ -48,4 +48,150 @@ h2 {
 
 .card {
   margin-bottom: 20px;
+} */
+ /* src/pages/Home.css */
+/* .small-carousel .carousel-item img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px; */
+/* } */
+
+/* App.css */
+
+/* General body background */
+body {
+  background-color: #ffe6f0; /* Light pink */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Navbar Styles */
+.custom-navbar {
+  background-color: #fff0f5;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-item {
+  color: #ff69b4 !important;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #ff1493 !important;
+  text-decoration: underline;
+}
+
+/* Carousel Styles */
+.large-carousel .carousel-img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* .carousel-caption h3 {
+  background-color: rgba(255, 105, 180, 0.6);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+} */
+
+/* Section Titles */
+h2 {
+  color: #d63384;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card-title {
+  color: #ff69b4;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+/* Popular Section Images */
+/* .popular-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #ff69b4;
+  padding: 4px;
+  transition: transform 0.3s;
+} */
+
+.popular-img:hover {
+  transform: scale(1.1);
+}
+
+/* Section Container */
+.container {
+  margin-top: 40px;
+}
+
+/* Make the cards stand out */
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .large-carousel .carousel-img {
+    height: 250px;
+  }
+
+  .nav-item {
+    margin: 0 8px;
+  }
+}
+.popular-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.popular-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.popular-img:hover {
+  transform: scale(1.05);
+}
+.navbar {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.navbar-brand img {
+  height: 40px; /* or try 35px */
+  width: auto;
+}
+.nav-link {
+  padding: 0.3rem 0.8rem;
+  font-size: 16px; /* Optional: reduce font size a bit */
+}
+
+
+
+
