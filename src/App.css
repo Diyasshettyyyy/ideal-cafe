@@ -1,64 +1,4 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-/* .carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-h2 {
-  font-weight: bold;
-}
-
-.card {
-  margin-bottom: 20px;
-} */
- /* src/pages/Home.css */
-/* .small-carousel .carousel-item img {
-  height: 300px;
-  object-fit: cover;
-  border-radius: 12px; */
-/* } */
-
-/* App.css */
-
-/* General body background */
 body {
   background-color: #ffe6f0; /* Light pink */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -93,16 +33,7 @@ body {
   border-radius: 12px;
 }
 
-/* .carousel-caption h3 {
-  background-color: rgba(255, 105, 180, 0.6);
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-} */
 
-/* Section Titles */
 h2 {
   color: #d63384;
   font-weight: bold;
@@ -119,15 +50,7 @@ h2 {
   font-size: 0.9rem;
 }
 
-/* Popular Section Images */
-/* .popular-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 4px solid #ff69b4;
-  padding: 4px;
-  transition: transform 0.3s;
-} */
+
 
 .popular-img:hover {
   transform: scale(1.1);
